@@ -1,21 +1,14 @@
 # Gcounter
 
-**TODO: Add description**
+**Grow-only crdt counter with distributed Elixir**
 
-## Installation
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `gcounter` to your list of dependencies in `mix.exs`:
 
-```elixir
-def deps do
-  [
-    {:gcounter, "~> 0.1.0"}
-  ]
-end
+## Running nodes
 ```
+make start_node target NAME=charlie target ID=2
 
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at <https://hexdocs.pm/gcounter>.
+make start_node target NAME=bob target ID=1
 
+make start_node target NAME=alice target ID=0
+```

@@ -9,7 +9,11 @@ defmodule Gcounter.Application do
   @impl true
   def start(_type, _args) do
     children = [
-      {Counter, [name: Application.fetch_env!(:gcounter, :type)]}
+      {Counter,
+       [
+         name: Application.fetch_env!(:gcounter, :type),
+         id: Application.fetch_env!(:gcounter, :id)
+       ]}
     ]
 
     # See https://hexdocs.pm/elixir/Supervisor.html
