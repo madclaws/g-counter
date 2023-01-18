@@ -34,7 +34,7 @@ eventually, with no centralized storage. Our grow-only crdt will merge correctly
 ### Reference
 http://jtfmumm.com/blog/2015/11/17/crdt-primer-1-defanging-order-theory/
 
-### TODO
+### Things we can improve
 
 - Adding and removal of nodes dynamically within a network
 - Implement actual gossip protocol for inter-node communications 
